@@ -1,0 +1,14 @@
+ReentrantLock实现
+ConcurrentHashMap实现
+GC跨区引用
+Spring事务 同一个类里面 非事务方法调用事务方法
+深copy和浅copy
+Mutex
+ThreadPool 的详细实现
+Spring bean 生命周期管理 比如 aware接口怎么实现
+定义二进制的数以0b开头。 牛逼
+
+DDD domian driven design
+OOD
+java序列化 研究下protobuf
+

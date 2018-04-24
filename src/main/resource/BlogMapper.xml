@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="blogMapper">
+    <select id="selectBlog" resultType="java.lang.Integer">
+        select count(*) from test1
+    </select>
+
+    <select id="selectBlogById" resultType="test1DO" parameterType="java.lang.Integer">
+        select * from test1 where id = #{id}
+    </select>
+
+</mapper>
+
