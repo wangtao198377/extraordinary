@@ -44,6 +44,6 @@ public class QuickSort implements Sort {
     }
 
     public static void main(String[] args) {
-        TestUtils.test(new QuickSort(),10000000);
+        TestUtils.test(new QuickSort(),10000);
     }
 }
