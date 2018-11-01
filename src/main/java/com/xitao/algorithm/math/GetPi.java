@@ -1,9 +1,5 @@
 package com.xitao.algorithm.math;
 
-import org.codehaus.groovy.util.AbstractConcurrentDoubleKeyMap;
-
-import java.util.Random;
-
 public class GetPi {
 
     public static void main(String[] args) {
