@@ -21,6 +21,14 @@ public class TestUtils {
         return result;
     }
 
+    public static Integer[] createRandomArrayInteger(int length,int max) {
+        Integer[] result = new Integer[length];
+        for(int i=0;i<length;i++) {
+            result[i] = new Random().nextInt(max);
+        }
+        return result;
+    }
+
     public static void printArray(int[] arr) {
         StringBuilder sb = new StringBuilder();
         for(int i=0;i<arr.length;i++) {
