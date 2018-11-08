@@ -17,6 +17,8 @@ public class IpToInt {
         System.out.println(Integer.toBinaryString(result));
         System.out.println(Integer.toHexString(result));
         System.out.println(Integer.toOctalString(result));
+        System.out.println(Integer.toBinaryString((byte)(-128)));
+
 
     }
 }
