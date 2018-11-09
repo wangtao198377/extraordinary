@@ -7,7 +7,7 @@ import org.springframework.cglib.proxy.MethodProxy;
 import java.lang.reflect.Method;
 
 public class SampleClass {
-    public void test(){
+    public void test() {
         System.out.println("hello world");
     }
 
@@ -38,7 +38,7 @@ public class SampleClass {
                 System.out.println("after method run...");
                 return result;
             }
+        });
+        return enhancer.create();
     }
-
-                Object proxy =   enhancer.create();
 }
