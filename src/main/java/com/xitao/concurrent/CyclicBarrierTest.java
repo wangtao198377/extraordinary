@@ -5,7 +5,9 @@ import java.util.concurrent.CyclicBarrier;
 
 public class CyclicBarrierTest {
     public static void main(String[] args) throws Exception,BrokenBarrierException {
-        CyclicBarrier cyclicBarrier = new CyclicBarrier(2);
+        CyclicBarrier cyclicBarrier = new CyclicBarrier(2,()->{
+            System.out.println("hello world");
+        });
         Thread thread = new Thread(
                 new Runnable() {
                     @Override
@@ -22,7 +24,7 @@ public class CyclicBarrierTest {
                 }
         );
         thread.start();;
-        thread.interrupt();
+        //thread.interrupt();
         try {
             cyclicBarrier.await();
         } catch(InterruptedException | BrokenBarrierException e) {
